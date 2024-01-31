@@ -1,0 +1,366 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Generic Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+    line-height: 1.6;
+    background: url('/images/background.jpeg') no-repeat fixed center;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Header Styles */
+
+.logo {
+    font-size: 2em;
+    color: #E9C46A; /* Dark Blue Color for Logo */
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+    background-color: rgba(69,98,104,0.8); /* Dark Blue for Nav Bar */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: #E9C46A; /* Yellow for Nav Links */
+    padding: 0 1em;
+}
+
+.nav-links li a:hover {
+    color: #F4A261; /* Orange for Hover State */
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background: url('/images/hero-min.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: white; /* Green for Heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white; /* Green for Paragraph */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+/* CTA Button Styles */
+
+.cta {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #F4A261; /* Orange for Button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #E9C46A; /* Yellow for Hover State */
+}
+
+/* Main Content Styles */
+
+main {
+    padding: 2em 5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Intro Section Styles */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.intro img, .container img {
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Shadow for images */
+}
+
+/* Highlights Section Styles */
+
+.highlights, .intro, .cta-section {
+    margin-bottom: 2em;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2em;
+}
+
+.highlight-item {
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Shadow for grid items */
+    transition: all 0.3s ease; /* Transition for hover effect */
+}
+
+.highlight-item:hover {
+    transform: scale(1.03); /* Scale up on hover */
+}
+
+.highlight-item img {
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+/* CTA Section Styles */
+
+.cta-section {
+    text-align: center;
+}
+
+/* Info Card Styles */
+
+.info-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows card elements to wrap */
+    margin: 2em 0;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease; /* Transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: rgba(69,98,104,0.8); /* Dark Blue for Footer */
+    color: #E9C46A; /* Yellow for Footer Text */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Card Text Styles */
+
+.card h2 {
+    font-size: 1.25em;
+    color: #333;
+    margin: 1em 0;
+}
+
+.card p {
+    padding: 0 1em 1em;
+    text-align: left;
+    color: black;
+}
+
+/* Gallery Styles */
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1em;
+    padding: 1em;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Transition for hover effect */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transition for hover effect */
+}
+
+.gallery-item:hover p {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Contact Form Styles */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+#contact-form {
+    width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000; /* Shadow for form container */
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+#contact-form label {
+    font-size: 18px;
+    color: #666;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease; /* Transition for hover effect */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+
+    .nav-links {
+        justify-content: space-around;
+        padding: 1em 0;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        padding: 1em 3em;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero p {
+        font-size: 1.4em;
+    }
+}
+
+

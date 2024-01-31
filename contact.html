@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Specifying the character encoding for the HTML document -->
+  <meta charset="UTF-8">
+
+  <!-- Making the webpage responsive with viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of the webpage -->
+  <title>Contact | Azerbaijan Tourism</title>
+
+  <!-- Linking an external CSS file for the styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Header section of the webpage -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+        <!-- Logo for the website, clicking on it will redirect to the home page -->
+        <a href="index.html"><div class="logo">Azerbaijan Guide</div></a>
+        
+        <!-- List of navigation links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Azerbaijan</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section of the webpage with heading and paragraph -->
+    <section class="hero">
+      <h1>Contact Us</h1>
+      <p>Have questions or need more information? Get in touch!</p>
+    </section>
+  </header>
+
+  <!-- Main content of the webpage -->
+  <main class="container">
+    <!-- Contact form section -->
+    <section id="contact-form">
+      <!-- HTML Form -->
+      <form action="/submit_form" method="POST">
+        <!-- Field for user's name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <!-- Field for user's email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Field for the subject of the message -->
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <!-- Field for the message from the user -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer section of the webpage -->
+  <footer>
+    <!-- Copyright notice -->
+    <p>© 2023 Travel Guide to Azerbaijan. All rights reserved.</p>
+  </footer>
+</body>
+</html>
